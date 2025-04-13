@@ -1,0 +1,1757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هوش ارا | hoosh ara</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+</head>
+<div class="container">
+    <main class="main-content">
+        <div class="settings-icon" id="settingsIcon" onclick="toggleSettingsMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+            </svg>
+        </div>
+
+        <div class="settings-menu" id="settingsMenu">
+            <a href="#" onclick="showAboutPage()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 5px;"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+                <span class="fa-lang">درباره ما</span>
+                <span class="en-lang">About Us</span>
+            </a>
+            <a href="#" onclick="toggleTheme()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 5px;"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2"></path><path d="M12 21v2"></path><path d="M4.22 4.22l1.42 1.42"></path><path d="M18.36 18.36l1.42 1.42"></path><path d="M1 12h2"></path><path d="M21 12h2"></path><path d="M4.22 19.78l1.42-1.42"></path><path d="M18.36 5.64l1.42-1.42"></path></svg>
+                <span class="fa-lang">روشن / تیره</span>
+                <span class="en-lang">Light / Dark</span>
+            </a>
+            <a href="#" onclick="toggleLanguage()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 5px;"><path d="M2 12h1"></path><path d="M6 12h1"></path><path d="M10 12h11"></path><path d="M5 8l-3 4 3 4"></path></svg>
+                <span class="fa-lang">فا / En</span>
+                <span class="en-lang">En / فا</span>
+            </a>
+        </div>
+
+        <header class="welcome-header">
+            <h1 class="fa-lang">خوش آمدید</h1>
+            <h1 class="en-lang">Welcome</h1>
+        </header>
+
+        <div class="icon-grid">
+            <div class="icon-button" onclick="showCalculationPage()">
+                <div class="icon-container">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="25" y="25" width="50" height="50" fill="white" opacity="0.8" rx="5" />
+                        <line x1="25" y1="40" x2="75" y2="40" stroke="blue" stroke-width="2" />
+                        <line x1="40" y1="25" x2="40" y2="75" stroke="blue" stroke-width="2" />
+                        <line x1="60" y1="25" x2="60" y2="75" stroke="blue" stroke-width="2" />
+                        <line x1="25" y1="55" x2="75" y2="55" stroke="blue" stroke-width="2" />
+                    </svg>
+                </div>
+                <span class="fa-lang">محاسبات</span>
+                <span class="en-lang">Calculations</span>
+            </div>
+
+            <div class="icon-button">
+                <div class="icon-container">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="35" cy="50" r="30" fill="white" opacity="0.8" />
+                        <circle cx="65" cy="50" r="30" fill="white" opacity="0.8" />
+                        <path d="M35 25 L35 75 M25 35 L45 35 M25 65 L45 65" stroke="white" stroke-width="2" fill="none" />
+                        <path d="M65 25 L65 75 M55 35 L75 35 M55 65 L75 65" stroke="white" stroke-width="2" fill="none" />
+                    </svg>
+                </div>
+                <span class="fa-lang">مجموعه ها</span>
+                <span class="en-lang">Sets</span>
+            </div>
+
+            <div class="icon-button">
+                <div class="icon-container">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30 30 Q50 20 70 30 Q80 50 70 70 Q50 80 30 70 Q20 50 30 30 Z" fill="white" opacity="0.8" />
+                        <path d="M40 40 L60 60 M40 60 L60 40" stroke="white" stroke-width="3" />
+                    </svg>
+                </div>
+                <span class="fa-lang">روابط طولی</span>
+                <span class="en-lang">Relations</span>
+            </div>
+
+            <div class="icon-button">
+                <div class="icon-container">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <text x="30" y="60" font-size="40" fill="white">x²</text>
+                    </svg>
+                </div>
+                <span class="fa-lang">فرمول ها</span>
+                <span class="en-lang">Formulas</span>
+            </div>
+
+            <div class="icon-button" onclick="showAIPage()">
+                <div class="icon-container">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="25" fill="white" opacity="0.8" />
+                        <path d="M35 50 Q50 65 65 50" stroke="blue" stroke-width="3" fill="none" />
+                        <circle cx="40" cy="40" r="3" fill="blue" />
+                        <circle cx="60" cy="40" r="3" fill="blue" />
+                    </svg>
+                </div>
+                <span class="fa-lang">هوش مصنوعی</span>
+                <span class="en-lang">AI</span>
+            </div>
+
+            <div class="icon-button">
+                <div class="icon-container">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <text x="30" y="65" font-size="45" fill="white">√</text>
+                    </svg>
+                </div>
+                <span class="fa-lang">رادیکال</span>
+                <span class="en-lang">Radical</span>
+            </div>
+
+            <div class="icon-button">
+                <div class="icon-container">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25 75 L75 75 L50 25 Z" fill="white" opacity="0.8" />
+                        <path d="M50 75 L50 25" stroke="blue" stroke-width="2" />
+                        <path d="M25 75 L75 75" stroke="blue" stroke-width="2" />
+                    </svg>
+                </div>
+                <span class="fa-lang">مثلثات</span>
+                <span class="en-lang">Trigonometry</span>
+            </div>
+
+            <div class="icon-button" onclick="showGraphPage()">
+                <div class="icon-container">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25 25 L25 75 L75 75" stroke="white" stroke-width="3" fill="none" />
+                        <path d="M25 75 L75 25" stroke="white" stroke-width="3" fill="none" />
+                        <circle cx="40" cy="60" r="3" fill="white" />
+                        <circle cx="55" cy="45" r="3" fill="white" />
+                        <circle cx="65" cy="35" r="3" fill="white" />
+                    </svg>
+                </div>
+                <span class="fa-lang">رسم نمودار</span>
+                <span class="en-lang">Graph Drawing</span>
+            </div>
+        </div>
+
+        <div class="exams-section">
+            <h2 class="fa-lang">آزمون ها</h2>
+            <h2 class="en-lang">Exams</h2>
+            <div class="chapters-grid">
+                <div class="chapter-card">
+                    <h3 class="fa-lang">فصل اول</h3>
+                    <h3 class="en-lang">Chapter 1</h3>
+                    <button class="download-button">
+                        <span class="download-icon">⬇️</span>
+                        <span class="fa-lang">دانلود</span>
+                        <span class="en-lang">Download</span>
+                    </button>
+                    <div class="chapter-info">
+                        <span class="fa-lang">طراح: سیمین جعفری</span>
+                        <span class="en-lang">Author: Simin Jafari</span>
+                        <div class="icons-row">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chapter-card">
+                    <h3 class="fa-lang">فصل دوم</h3>
+                    <h3 class="en-lang">Chapter 2</h3>
+                    <button class="download-button">
+                        <span class="download-icon">⬇️</span>
+                        <span class="fa-lang">دانلود</span>
+                        <span class="en-lang">Download</span>
+                    </button>
+                    <div class="chapter-info">
+                        <span class="fa-lang">طراح: اکبر موسوی</span>
+                        <span class="en-lang">Author: Akbar Mousavi</span>
+                        <div class="icons-row">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chapter-card">
+                    <h3 class="fa-lang">فصل سوم</h3>
+                    <h3 class="en-lang">Chapter 3</h3>
+                    <button class="download-button">
+                        <span class="download-icon">⬇️</span>
+                        <span class="fa-lang">دانلود</span>
+                        <span class="en-lang">Download</span>
+                    </button>
+                    <div class="chapter-info">
+                        <span class="fa-lang">طراح: علی جعفری</span>
+                        <span class="en-lang">Author: Ali Jafari</span>
+                        <div class="icons-row">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chapter-card">
+                    <h3 class="fa-lang">فصل چهارم</h3>
+                    <h3 class="en-lang">Chapter 4</h3>
+                    <button class="download-button purchase-button">
+                        <span class="download-icon">⬇️</span>
+                        <span class="fa-lang">خرید فایل</span>
+                        <span class="en-lang">Buy File</span>
+                    </button>
+                    <div class="chapter-info">
+                        <span class="fa-lang">طراح: مهدی عباسی</span>
+                        <span class="en-lang">Author: Mehdi Abbasi</span>
+                        <div class="icons-row">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <aside class="sidebar">
+        <div class="logo">
+            <div class="logo-icon">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="40" fill="#0066cc" />
+                    <path d="M30 50 Q50 20 70 50 Q50 80 30 50 Z" fill="white" />
+                </svg>
+            </div>
+            <h2 class="fa-lang">هوش آرا</h2>
+            <h2 class="en-lang">Hoosh Ara</h2>
+        </div>
+
+        <div class="sidebar-section">
+            <h3 class="section-title fa-lang">محاسبات</h3>
+            <h3 class="section-title en-lang">Calculations</h3>
+            <ul class="sidebar-menu">
+                <li><a href="#" onclick="showCalculationPage()">
+                    <span class="fa-lang">محاسبات عددی</span>
+                    <span class="en-lang">Numerical Calculations</span>
+                </a></li>
+                <li><a href="#" onclick="showGraphPage()">
+                    <span class="fa-lang">کشیدن نمودارها</span>
+                    <span class="en-lang">Drawing Graphs</span>
+                </a></li>
+                <li><a href="#">
+                    <span class="fa-lang">روابط طولی و مثلثات</span>
+                    <span class="en-lang">Relations & Trigonometry</span>
+                </a></li>
+                <li><a href="#">
+                    <span class="fa-lang">مجموعه‌ها و نمودار ون</span>
+                    <span class="en-lang">Sets & Venn Diagrams</span>
+                </a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-section">
+            <h3 class="section-title fa-lang">اثبات ها</h3>
+            <h3 class="section-title en-lang">Proofs</h3>
+            <ul class="sidebar-menu">
+                <li><a href="#">
+                    <span class="fa-lang">اثبات‌های هندسی</span>
+                    <span class="en-lang">Geometric Proofs</span>
+                </a></li>
+                <li><a href="#">
+                    <span class="fa-lang">اثبات‌های جبری کاربردی</span>
+                    <span class="en-lang">Applied Algebraic Proofs</span>
+                </a></li>
+                <li><a href="#">
+                    <span class="fa-lang">اثبات قضیه فیثاغورث</span>
+                    <span class="en-lang">Pythagoras Theorem Proof</span>
+                </a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-section">
+            <h3 class="section-title fa-lang">فرمول ها</h3>
+            <h3 class="section-title en-lang">Formulas</h3>
+            <ul class="sidebar-menu">
+                <li><a href="#">
+                    <span class="fa-lang">فصل ۱: مجموعه‌ها</span>
+                    <span class="en-lang">Chapter 1: Sets</span>
+                </a></li>
+                <li><a href="#">
+                    <span class="fa-lang">فصل ۲: اعداد حقیقی</span>
+                    <span class="en-lang">Chapter 2: Real Numbers</span>
+                </a></li>
+                <li><a href="#">
+                    <span class="fa-lang">فصل ۳: اعداد و روابط در هندسه</span>
+                    <span class="en-lang">Chapter 3: Numbers & Geometry</span>
+                </a></li>
+            </ul>
+        </div>
+    </aside>
+</div>
+
+<!-- صفحه هوش مصنوعی -->
+<div class="ai-page" id="aiPage">
+<div class="ai-header">
+    <div class="info-icon" id="infoIcon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 16v-4"></path>
+            <path d="M12 8h.01"></path>
+        </svg>
+        <div class="info-tooltip">
+            <p class="fa-lang">سلام. این نسخه از هوش مصنوعی به صورت تستی فعال است و در آینده ممکن است به دلیل شارژ نداشتن API از کار متوقف شود.</p>
+            <p class="en-lang">Hello. This version of AI is activated as a test and may be discontinued in the future due to API charge limitations.</p>
+        </div>
+    </div>
+
+    <div class="ai-title fa-lang">دستیار هوش مصنوعی ریاضی</div>
+    <div class="ai-title en-lang">AI Math Assistant</div>
+
+    <button class="back-button" id="aiBackButton" onclick="closeAIPage()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        <span class="fa-lang">بازگشت</span>
+        <span class="en-lang">Back</span>
+    </button>
+</div>
+
+<div class="ai-content">
+    <div class="ai-intro" id="aiIntro">
+        <div class="ai-logo-container">
+            <img src="https://example.com/your-image-url.png" alt="Math Robot" class="ai-robot-image" />
+        </div>
+        <h1 class="fa-lang">دستیار هوشمند ریاضی</h1>
+        <h1 class="en-lang">Smart Math Assistant</h1>
+        <p class="fa-lang">از من هر سوال ریاضی دارید بپرسید. من اینجا هستم تا به شما در حل مسائل و درک مفاهیم ریاضی کمک کنم.</p>
+        <p class="en-lang">Ask me any math question you have. I'm here to help you solve problems and understand mathematical concepts.</p>
+        <button class="start-chat-btn fa-lang" id="startChatBtn" onclick="openChatInterface()">شروع گفتگو</button>
+        <button class="start-chat-btn en-lang" id="startChatBtnEn" onclick="openChatInterface()">Start Chat</button>
+    </div>
+
+    <div class="chat-interface" id="chatInterface">
+        <div class="model-selector">
+            <button class="model-select-btn" id="modelSelectBtn">
+                <span class="fa-lang">انتخاب مدل</span>
+                <span class="en-lang">Select Model</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </button>
+            <div class="model-dropdown" id="modelDropdown">
+                <div class="model-group">
+                    <h3 class="fa-lang">GPT-4O (30 بار در روز)</h3>
+                    <h3 class="en-lang">GPT-4O (30 times/day)</h3>
+                    <div class="model-option active" data-model="gpt-4o">GPT-4O</div>
+                    <div class="model-option" data-model="gpt-4o-2024-05-13">GPT-4O (2024-05-13)</div>
+                    <div class="model-option" data-model="gpt-4o-2024-08-06">GPT-4O (2024-08-06)</div>
+                    <div class="model-option" data-model="gpt-4o-2024-11-20">GPT-4O (2024-11-20)</div>
+                </div>
+                <div class="model-group">
+                    <h3 class="fa-lang">GPT-4O-Mini (200 بار در روز)</h3>
+                    <h3 class="en-lang">GPT-4O-Mini (200 times/day)</h3>
+                    <div class="model-option" data-model="gpt-4o-mini">GPT-4O-Mini</div>
+                    <div class="model-option" data-model="gpt-4o-mini-2024-07-18">GPT-4O-Mini (2024-07-18)</div>
+                </div>
+                <div class="model-group">
+                    <h3 class="fa-lang">DeepSeek (30 بار در روز)</h3>
+                    <h3 class="en-lang">DeepSeek (30 times/day)</h3>
+                    <div class="model-option" data-model="deepseek-r1">DeepSeek-R1</div>
+                    <div class="model-option" data-model="deepseek-v3">DeepSeek-V3</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-container" id="chatContainer">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <div class="message-avatar">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="40" fill="#0066cc" />
+                            <path d="M30 50 Q50 20 70 50 Q50 80 30 50 Z" fill="white" />
+                        </svg>
+                    </div>
+                    <div class="message-content">
+                        <p class="fa-lang">سلام! من دستیار هوشمند ریاضی هستم. چه سوالی در مورد ریاضی دارید؟</p>
+                        <p class="en-lang">Hello! I'm your smart math assistant. What math question can I help you with?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-container">
+                <textarea id="userInput" class="chat-input" placeholder="سوال ریاضی خود را بنویسید..." rows="1"></textarea>
+                <button class="send-button" id="sendButton">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<!-- صفحه درباره ما با طراحی جدید و انیمیشن‌های پیشرفته -->
+<div class="about-page" id="aboutPage">
+    <div class="close-about" onclick="closeAboutPage()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+    </div>
+
+    <div class="about-hero">
+        <div class="hero-background">
+            <div class="particles-container" id="particles-js"></div>
+                            <div class="hero-overlay"></div>
+                        </div>
+                        <div class="hero-content">
+                            <div class="logo-animation">
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="animated-logo">
+                                    <circle cx="50" cy="50" r="40" fill="#0066cc" class="logo-circle" />
+                                    <path d="M30 50 Q50 20 70 50 Q50 80 30 50 Z" fill="white" class="logo-path" />
+                                </svg>
+                            </div>
+                            <h1 class="fa-lang animated-title">درباره هوش آرا</h1>
+                            <h1 class="en-lang animated-title">About Hoosh Ara</h1>
+                            <p class="fa-lang animated-subtitle">آموزش هوشمند ریاضی با نگاهی نو</p>
+                            <p class="en-lang animated-subtitle">Smart Math Education with a Fresh Perspective</p>
+                        </div>
+
+                        <div class="scroll-indicator">
+                            <span class="fa-lang">پایین بروید</span>
+                            <span class="en-lang">Scroll Down</span>
+                            <div class="scroll-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 5v14M5 12l7 7 7-7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-sections">
+                        <section class="about-section mission-section reveal-section">
+                            <div class="section-content">
+                                <h2 class="fa-lang section-title">ماموریت ما</h2>
+                                <h2 class="en-lang section-title">Our Mission</h2>
+                                <p class="fa-lang">هوش آرا با هدف ساده‌سازی یادگیری ریاضی و ارائه روش‌های نوین آموزشی ایجاد شده است. ما معتقدیم ریاضی می‌تواند برای همه جذاب و قابل درک باشد، به شرطی که با روش درست آموزش داده شود. ماموریت ما ایجاد تجربه‌ای لذت‌بخش از یادگیری ریاضی است.</p>
+                                <p class="en-lang">Hoosh Ara was created with the goal of simplifying math learning and providing innovative teaching methods. We believe mathematics can be engaging and understandable for everyone, provided it's taught the right way. Our mission is to create an enjoyable experience of learning mathematics.</p>
+                            </div>
+                            <div class="section-image">
+                                <div class="floating-shapes">
+                                    <div class="shape shape-1">∑</div>
+                                    <div class="shape shape-2">π</div>
+                                    <div class="shape shape-3">∞</div>
+                                    <div class="shape shape-4">√</div>
+                                    <div class="shape shape-5">∫</div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- بخش دبیر ریاضی - طراحی جدید -->
+                        <section class="about-section teacher-section reveal-section">
+                            <div class="section-content">
+                                <h2 class="fa-lang section-title">دبیر ریاضی</h2>
+                                <h2 class="en-lang section-title">Math Teacher</h2>
+                                <div class="teacher-profile">
+                                    <div class="teacher-image-container">
+                                        <div class="teacher-portrait">
+                                            <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Math Teacher" class="teacher-image">
+                                        </div>
+                                        <div class="math-symbols">
+                                            <div class="math-symbol">∫</div>
+                                            <div class="math-symbol">π</div>
+                                            <div class="math-symbol">∑</div>
+                                            <div class="math-symbol">√</div>
+                                            <div class="math-symbol">∞</div>
+                                        </div>
+                                    </div>
+                                    <div class="teacher-info">
+                                        <h3 class="teacher-name fa-lang">دکتر زهرا محمدی</h3>
+                                        <h3 class="teacher-name en-lang">Dr. Zahra Mohammadi</h3>
+                                        <div class="teacher-title fa-lang">دبیر ارشد ریاضی و مشاور محتوای آموزشی</div>
+                                        <div class="teacher-title en-lang">Senior Math Teacher & Educational Content Advisor</div>
+                                        <p class="teacher-bio fa-lang">دکتر زهرا محمدی با بیش از 15 سال سابقه تدریس ریاضی در مدارس و دانشگاه‌های معتبر، مشاور اصلی محتوای آموزشی سایت هوش آرا است. تخصص او در ساده‌سازی مفاهیم پیچیده ریاضی و ارائه روش‌های خلاقانه برای حل مسائل، به طراحی بخش‌های محاسباتی و آموزشی سایت کمک شایانی کرده است.</p>
+                                        <p class="teacher-bio en-lang">Dr. Zahra Mohammadi, with over 15 years of experience teaching mathematics in reputable schools and universities, is the main advisor for the educational content of Hoosh Ara. Her expertise in simplifying complex mathematical concepts and providing creative methods for problem-solving has greatly contributed to the design of the computational and educational sections of the site.</p>
+                                    </div>
+                                </div>
+                                <div class="math-formula-showcase">
+                                    <div class="formula-card">
+                                        <div class="formula">E = mc²</div>
+                                        <div class="formula-name">فرمول انیشتین</div>
+                                    </div>
+                                    <div class="formula-card">
+                                        <div class="formula">a² + b² = c²</div>
+                                        <div class="formula-name">قضیه فیثاغورث</div>
+                                    </div>
+                                    <div class="formula-card">
+                                        <div class="formula">∫ f(x) dx</div>
+                                        <div class="formula-name">انتگرال نامعین</div>
+                                    </div>
+                                    <div class="formula-card">
+                                        <div class="formula">F = G(m₁m₂/r²)</div>
+                                        <div class="formula-name">قانون گرانش نیوتن</div>
+                                    </div>
+                                    <div class="formula-card">
+                                        <div class="formula">e^(iπ) + 1 = 0</div>
+                                        <div class="formula-name">اتحاد اویلر</div>
+                                    </div>
+                                    <div class="formula-card">
+                                        <div class="formula">sin²θ + cos²θ = 1</div>
+                                        <div class="formula-name">اتحاد مثلثاتی پایه</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                      <!-- بخش برنامه‌نویس - طراحی بهبود یافته -->
+<section class="about-section developer-section reveal-section">
+<div class="section-content">
+  <h2 class="fa-lang section-title">برنامه‌نویس سایت</h2>
+  <h2 class="en-lang section-title">Site Developer</h2>
+  <div class="developer-profile">
+    <div class="developer-image-container">
+      <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Developer" class="developer-image">
+    </div>
+    <div class="developer-info">
+      <h3 class="developer-name fa-lang">حسین رضایی</h3>
+      <h3 class="developer-name en-lang">Hossein Rezaei</h3>
+      <div class="developer-title fa-lang">برنامه‌نویس ارشد فرانت‌اند و بک‌اند</div>
+      <div class="developer-title en-lang">Senior Front-end & Back-end Developer</div>
+      <p class="fa-lang">مهندس حسین رضایی، برنامه‌نویس ارشد با بیش از 8 سال تجربه در توسعه وب، مسئول کدنویسی و پیاده‌سازی فنی سایت هوش آرا است. تخصص او در زمینه فرانت‌اند و بک‌اند، امکان ایجاد یک پلتفرم آموزشی یکپارچه، روان و کاربرپسند را فراهم کرده است.</p>
+      <p class="en-lang">Eng. Hossein Rezaei, a senior developer with over 8 years of experience in web development, is responsible for coding and technical implementation of the Hoosh Ara site. His expertise in front-end and back-end development has enabled the creation of an integrated, smooth, and user-friendly educational platform.</p>
+
+      <div class="social-links">
+        <a href="#" class="social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+        <a href="#" class="social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        </a>
+        <a href="#" class="social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- نمایش کدها با طراحی جدید -->
+  <div class="coding-showcase">
+    <div class="language-tabs">
+      <button class="language-tab active" data-tab="html">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="language-icon"> HTML5
+      </button>
+      <button class="language-tab" data-tab="css">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="language-icon"> CSS3
+      </button>
+      <button class="language-tab" data-tab="js">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="language-icon"> JavaScript
+      </button>
+      <button class="language-tab" data-tab="react">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="language-icon"> React
+      </button>
+      <button class="language-tab" data-tab="vue">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js" class="language-icon"> Vue.js
+      </button>
+    </div>
+
+    <div class="code-window">
+      <div class="code-window-header">
+        <div class="window-controls">
+          <div class="control-dot red"></div>
+          <div class="control-dot yellow"></div>
+          <div class="control-dot green"></div>
+        </div>
+        <div class="window-title fa-lang">کد نمونه</div>
+        <div class="window-title en-lang">Sample Code</div>
+      </div>
+
+      <div class="code-content active" id="htmlCode">
+        <!-- HTML code is loaded by JavaScript -->
+      </div>
+
+      <div class="code-content" id="cssCode">
+        <!-- CSS code is loaded by JavaScript -->
+      </div>
+
+      <div class="code-content" id="jsCode">
+        <!-- JavaScript code is loaded by JavaScript -->
+      </div>
+
+      <div class="code-content" id="reactCode">
+        <!-- React code is loaded by JavaScript -->
+      </div>
+
+      <div class="code-content" id="vueCode">
+        <!-- Vue.js code is loaded by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- نمایش ترکیب کدهای سایت -->
+  <div class="language-progress">
+    <h3 class="progress-title fa-lang">ترکیب کدهای سایت</h3>
+    <h3 class="progress-title en-lang">Website Code Composition</h3>
+    <div class="progress-bars">
+      <div class="progress-item">
+        <div class="progress-label">
+          <span class="progress-name">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"> HTML5
+          </span>
+          <span class="progress-percentage">42%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill html" id="htmlProgress"></div>
+        </div>
+        <div class="progress-info fa-lang">
+          ساختار اصلی سایت با HTML5 پیاده‌سازی شده و از تگ‌های معنایی استفاده شده است.
+        </div>
+        <div class="progress-info en-lang">
+          The main structure of the site is implemented with HTML5 and semantic tags are used.
+        </div>
+      </div>
+
+      <div class="progress-item">
+        <div class="progress-label">
+          <span class="progress-name">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"> CSS3
+          </span>
+          <span class="progress-percentage">35%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill css" id="cssProgress"></div>
+        </div>
+        <div class="progress-info fa-lang">
+          استایل‌دهی سایت با CSS3 انجام شده و از متغیرهای CSS برای مدیریت بهتر رنگ‌ها استفاده شده است.
+        </div>
+        <div class="progress-info en-lang">
+          Site styling is done with CSS3 and CSS variables are used for better color management.
+        </div>
+      </div>
+
+      <div class="progress-item">
+        <div class="progress-label">
+          <span class="progress-name">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"> JavaScript
+          </span>
+          <span class="progress-percentage">20%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill js" id="jsProgress"></div>
+        </div>
+        <div class="progress-info fa-lang">
+          تعاملات کاربری و انیمیشن‌های سایت با JavaScript پیاده‌سازی شده‌اند.
+        </div>
+        <div class="progress-info en-lang">
+          User interactions and site animations are implemented with JavaScript.
+        </div>
+      </div>
+
+      <div class="progress-item">
+        <div class="progress-label">
+          <span class="progress-name">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svg/svg-original.svg" alt="SVG"> SVG
+          </span>
+          <span class="progress-percentage">8%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill svg" id="svgProgress"></div>
+        </div>
+        <div class="progress-info fa-lang">
+          آیکون‌ها و تصاویر گرافیکی با فرمت SVG برای کیفیت بالا در همه نمایشگرها استفاده شده‌اند.
+        </div>
+        <div class="progress-info en-lang">
+          Icons and graphical images are used in SVG format for high quality on all displays.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+                        <!-- بخش طراح سایت - طراحی جدید و خلاقانه -->
+                        <section class="about-section designer-section reveal-section">
+                            <div class="section-content">
+                                <h2 class="fa-lang section-title">طراح سایت</h2>
+                                <h2 class="en-lang section-title">Site Designer</h2>
+                                <div class="designer-profile">
+                                    <div class="designer-image-container">
+                                        <div class="designer-portrait">
+                                                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Designer" class="designer-image">
+                                                                        </div>
+                                                                        <div class="designer-frame"></div>
+                                                                    </div>
+                                                                    <div class="designer-tools">
+                                                                        <div class="tool-icon">
+                                                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                                                                        </div>
+                                                                        <div class="tool-icon">
+                                                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop">
+                                                                        </div>
+                                                                        <div class="tool-icon">
+                                                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" alt="Illustrator">
+                                                                        </div>
+                                                                        <div class="tool-icon">
+                                                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-plain.svg" alt="Adobe XD">
+                                                                        </div>
+                                                                        <div class="tool-icon">
+                                                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sketch/sketch-original.svg" alt="Sketch">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="designer-info">
+                                                                        <h3 class="designer-name fa-lang">سارا احمدی</h3>
+                                                                        <h3 class="designer-name en-lang">Sara Ahmadi</h3>
+                                                                        <div class="designer-title fa-lang">طراح رابط کاربری و تجربه کاربری</div>
+                                                                        <div class="designer-title en-lang">UI/UX Designer</div>
+                                                                        <p class="designer-bio fa-lang">سارا احمدی با بیش از 6 سال تجربه در طراحی رابط کاربری و تجربه کاربری، مسئول طراحی بصری و ساختار تعاملی سایت هوش آرا است. او با ترکیبی از خلاقیت و درک عمیق از نیازهای کاربران، تجربه‌ای جذاب و کاربرپسند برای یادگیری ریاضی طراحی کرده است.</p>
+                                                                        <p class="designer-bio en-lang">Sara Ahmadi, with over 6 years of experience in UI/UX design, is responsible for the visual design and interactive structure of the Hoosh Ara site. With a combination of creativity and deep understanding of user needs, she has designed an engaging and user-friendly experience for learning mathematics.</p>
+
+                                                                        <div class="designer-social">
+                                                                            <a href="#" class="designer-social-link">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                                                            </a>
+                                                                            <a href="#" class="designer-social-link">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                                                                            </a>
+                                                                            <a href="#" class="designer-social-link">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                                                                            </a>
+                                                                            <a href="#" class="designer-social-link">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="design-showcase">
+                                                                    <div class="design-gallery">
+                                                                        <div class="design-item">
+                                                                            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Design Sample" class="design-image">
+                                                                            <div class="design-overlay">
+                                                                                <div>
+                                                                                    <div class="design-title">صفحه اصلی</div>
+                                                                                    <div class="design-tag">طراحی رابط کاربری</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="design-item">
+                                                                            <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Design Sample" class="design-image">
+                                                                            <div class="design-overlay">
+                                                                                <div>
+                                                                                    <div class="design-title">صفحه محاسبات</div>
+                                                                                    <div class="design-tag">تجربه کاربری</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="design-item">
+                                                                            <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Design Sample" class="design-image">
+                                                                            <div class="design-overlay">
+                                                                                <div>
+                                                                                    <div class="design-title">رسم نمودار</div>
+                                                                                    <div class="design-tag">طراحی تعاملی</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="design-item">
+                                                                            <img src="https://images.unsplash.com/photo-1581291518770-b23886dc81d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Design Sample" class="design-image">
+                                                                            <div class="design-overlay">
+                                                                                <div>
+                                                                                    <div class="design-title">مجموعه‌ها</div>
+                                                                                    <div class="design-tag">طراحی گرافیکی</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+
+                                                <!-- صفحه محاسبات -->
+                                                <div class="calculation-page" id="calculationPage">
+                                                    <div class="calculation-header">
+                                                        <div class="calculation-title fa-lang">محاسبات عددی پیشرفته</div>
+                                                        <div class="calculation-title en-lang">Advanced Numerical Calculations</div>
+                                                        <button class="back-button" onclick="closeCalculationPage()">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                                <path d="M19 12H5M12 19l-7-7 7-7"/>
+                                                            </svg>
+                                                            <span class="fa-lang">بازگشت</span>
+                                                            <span class="en-lang">Back</span>
+                                                        </button>
+                                                    </div>
+
+                                                    <div class="calculation-content">
+                                                        <!-- بخش‌های محاسبات -->
+                                                        <div class="calculation-tabs">
+                                                            <button class="calc-tab-btn active" data-tab="calculator">
+                                                                <i class="fas fa-calculator"></i>
+                                                                <span class="fa-lang">ماشین حساب مهندسی</span>
+                                                                <span class="en-lang">Engineering Calculator</span>
+                                                            </button>
+                                                            <button class="calc-tab-btn" data-tab="geometry">
+                                                                <i class="fas fa-shapes"></i>
+                                                                <span class="fa-lang">مساحت و محیط</span>
+                                                                <span class="en-lang">Area & Perimeter</span>
+                                                            </button>
+                                                            <button class="calc-tab-btn" data-tab="equations">
+                                                                <i class="fas fa-square-root-alt"></i>
+                                                                <span class="fa-lang">حل معادلات</span>
+                                                                <span class="en-lang">Equation Solver</span>
+                                                            </button>
+                                                        </div>
+
+                                                       <!-- بخش ماشین حساب مهندسی -->
+                                            <div class="calc-tab-content active" id="calculator-tab">
+                                                <div class="calculator-container">
+                                                    <div class="calculator-header">
+                                                        <h2 class="fa-lang">ماشین حساب مهندسی</h2>
+                                                        <h2 class="en-lang">Engineering Calculator</h2>
+                                                        <p class="fa-lang">محاسبات پیشرفته ریاضی را با این ابزار انجام دهید</p>
+                                                        <p class="en-lang">Perform advanced mathematical calculations with this tool</p>
+                                                    </div>
+
+                                                    <div class="calculator-body">
+                                                        <div class="calculator-screen">
+                                                            <div class="calculator-history" id="calculatorHistory"></div>
+                                                            <div class="calculator-display" id="calculatorDisplay">0</div>
+                                                        </div>
+
+                                                        <div class="calculator-grid">
+                                                            <button class="calculator-btn function" onclick="calculatorClear()">AC</button>
+                                                            <button class="calculator-btn function" onclick="calculatorBackspace()"><i class="fas fa-backspace"></i></button>
+                                                            <button class="calculator-btn function" onclick="calculatorOperation('%')">%</button>
+                                                            <button class="calculator-btn operator" onclick="calculatorOperation('/')">÷</button>
+
+                                                            <button class="calculator-btn" onclick="calculatorAppend('7')">7</button>
+                                                            <button class="calculator-btn" onclick="calculatorAppend('8')">8</button>
+                                                            <button class="calculator-btn" onclick="calculatorAppend('9')">9</button>
+                                                            <button class="calculator-btn operator" onclick="calculatorOperation('*')">×</button>
+
+                                                            <button class="calculator-btn" onclick="calculatorAppend('4')">4</button>
+                                                            <button class="calculator-btn" onclick="calculatorAppend('5')">5</button>
+                                                            <button class="calculator-btn" onclick="calculatorAppend('6')">6</button>
+                                                            <button class="calculator-btn operator" onclick="calculatorOperation('-')">−</button>
+
+                                                            <button class="calculator-btn" onclick="calculatorAppend('1')">1</button>
+                                                            <button class="calculator-btn" onclick="calculatorAppend('2')">2</button>
+                                                            <button class="calculator-btn" onclick="calculatorAppend('3')">3</button>
+                                                            <button class="calculator-btn operator" onclick="calculatorOperation('+')">+</button>
+
+                                                            <button class="calculator-btn" onclick="calculatorAppend('0')">0</button>
+                                                            <button class="calculator-btn" onclick="calculatorAppend('.')">.</button>
+                                                            <button class="calculator-btn equal" onclick="calculatorCalculate()" colspan="2">=</button>
+                                                        </div>
+
+                                                        <div class="scientific-functions">
+                                                            <div class="scientific-grid">
+                                                                <button class="scientific-btn" onclick="calculatorFunction('sin')">sin</button>
+                                                                <button class="scientific-btn" onclick="calculatorFunction('cos')">cos</button>
+                                                                <button class="scientific-btn" onclick="calculatorFunction('tan')">tan</button>
+                                                                <button class="scientific-btn" onclick="calculatorFunction('ln')">ln</button>
+
+                                                                <button class="scientific-btn" onclick="calculatorFunction('sqrt')">√</button>
+                                                                <button class="scientific-btn" onclick="calculatorFunction('pow')">x^y</button>
+                                                                <button class="scientific-btn" onclick="calculatorConstant('pi')">π</button>
+                                                                <button class="scientific-btn" onclick="calculatorConstant('e')">e</button>
+
+                                                                <button class="scientific-btn" onclick="calculatorAppend('(')">(</button>
+                                                                <button class="scientific-btn" onclick="calculatorAppend(')')">)</button>
+                                                                <button class="scientific-btn" onclick="calculatorFunction('log')">log</button>
+                                                                <button class="scientific-btn" onclick="calculatorFunction('abs')">|x|</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                                        <!-- بخش مساحت و محیط -->
+                                                        <div class="calc-tab-content" id="geometry-tab">
+                                                            <div class="geometry-container">
+                                                                <div class="geometry-header">
+                                                                    <h2 class="fa-lang">محاسبه مساحت و محیط اشکال</h2>
+                                                                    <h2 class="en-lang">Area and Perimeter Calculator</h2>
+                                                                    <p class="fa-lang">مساحت و محیط اشکال مختلف را محاسبه کنید</p>
+                                                                    <p class="en-lang">Calculate the area and perimeter of different shapes</p>
+                                                                </div>
+
+                                                                <div class="geometry-body">
+                                                                    <div class="shape-selector">
+                                                                        <div class="shape-option active" data-shape="circle">
+                                                                            <div class="shape-icon">
+                                                                                <i class="fas fa-circle"></i>
+                                                                            </div>
+                                                                            <span class="fa-lang">دایره</span>
+                                                                            <span class="en-lang">Circle</span>
+                                                                        </div>
+                                                                        <div class="shape-option" data-shape="rectangle">
+                                                                            <div class="shape-icon">
+                                                                                <i class="fas fa-square"></i>
+                                                                            </div>
+                                                                            <span class="fa-lang">مستطیل</span>
+                                                                            <span class="en-lang">Rectangle</span>
+                                                                        </div>
+                                                                        <div class="shape-option" data-shape="triangle">
+                                                                            <div class="shape-icon">
+                                                                                <i class="fas fa-play" style="transform: rotate(90deg);"></i>
+                                                                            </div>
+                                                                            <span class="fa-lang">مثلث</span>
+                                                                            <span class="en-lang">Triangle</span>
+                                                                        </div>
+                                                                        <div class="shape-option" data-shape="ellipse">
+                                                                            <div class="shape-icon">
+                                                                                <i class="fas fa-egg"></i>
+                                                                            </div>
+                                                                            <span class="fa-lang">بیضی</span>
+                                                                            <span class="en-lang">Ellipse</span>
+                                                                        </div>
+                                                                        <div class="shape-option" data-shape="trapezoid">
+                                                                            <div class="shape-icon">
+                                                                                <i class="fas fa-draw-polygon"></i>
+                                                                            </div>
+                                                                            <span class="fa-lang">ذوزنقه</span>
+                                                                            <span class="en-lang">Trapezoid</span>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="shape-calculator">
+                                                                        <!-- دایره -->
+                                                                        <div class="shape-form active" id="circle-form">
+                                                                            <div class="shape-illustration">
+                                                                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                                                                    <circle cx="50" cy="50" r="40" fill="rgba(0,102,204,0.2)" stroke="#0066cc" stroke-width="2"/>
+                                                                                    <line x1="50" y1="50" x2="90" y2="50" stroke="#0066cc" stroke-width="2" stroke-dasharray="4"/>
+                                                                                    <text x="65" y="45" font-size="10" fill="#0066cc">r</text>
+                                                                                </svg>
+                                                                            </div>
+                                                                            <div class="shape-inputs">
+                                                                                <div class="form-group">
+                                                                                    <label class="fa-lang">شعاع دایره (r)</label>
+                                                                                    <label class="en-lang">Circle Radius (r)</label>
+                                                                                    <div class="input-group">
+                                                                                        <input type="number" id="circleRadius" min="0" step="0.1" value="5">
+                                                                                        <span class="unit">cm</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <button class="calculate-btn" onclick="calculateCircle()">
+                                                                                    <i class="fas fa-calculator"></i>
+                                                                                    <span class="fa-lang">محاسبه</span>
+                                                                                    <span class="en-lang">Calculate</span>
+                                                                                </button>
+                                                                            </div>
+                                                                            <div class="shape-results">
+                                                                                <div class="result-item">
+                                                                                    <div class="result-label fa-lang">مساحت</div>
+                                                                                    <div class="result-label en-lang">Area</div>
+                                                                                    <div class="result-value" id="circleArea">78.54 cm²</div>
+                                                                                    <div class="result-formula">A = πr²</div>
+                                                                                </div>
+                                                                                <div class="result-item">
+                                                                                    <div class="result-label fa-lang">محیط</div>
+                                                                                    <div class="result-label en-lang">Perimeter</div>
+                                                                                    <div class="result-value" id="circlePerimeter">31.42 cm</div>
+                                                                                    <div class="result-formula">P = 2πr</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <!-- مستطیل -->
+                                                                        <div class="shape-form" id="rectangle-form">
+                                                                            <div class="shape-illustration">
+                                                                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                                                                    <rect x="10" y="25" width="80" height="50" fill="rgba(0,102,204,0.2)" stroke="#0066cc" stroke-width="2"/>
+                                                                                    <text x="45" y="55" font-size="10" fill="#0066cc">w × h</text>
+                                                                                    <line x1="10" y1="20" x2="90" y2="20" stroke="#0066cc" stroke-width="2" stroke-dasharray="4"/>
+                                                                                    <text x="45" y="18" font-size="10" fill="#0066cc">w</text>
+                                                                                    <line x1="95" y1="25" x2="95" y2="75" stroke="#0066cc" stroke-width="2" stroke-dasharray="4"/>
+                                                                                    <text x="97" y="50" font-size="10" fill="#0066cc">h</text>
+                                                                                </svg>
+                                                                            </div>
+                                                                            <div class="shape-inputs">
+                                                                                <div class="form-group">
+                                                                                    <label class="fa-lang">طول (w)</label>
+                                                                                    <label class="en-lang">Width (w)</label>
+                                                                                    <div class="input-group">
+                                                                                        <input type="number" id="rectangleWidth" min="0" step="0.1" value="8">
+                                                                                        <span class="unit">cm</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label class="fa-lang">عرض (h)</label>
+                                                                                    <label class="en-lang">Height (h)</label>
+                                                                                    <div class="input-group">
+                                                                                        <input type="number" id="rectangleHeight" min="0" step="0.1" value="5">
+                                                                                        <span class="unit">cm</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <button class="calculate-btn" onclick="calculateRectangle()">
+                                                                                    <i class="fas fa-calculator"></i>
+                                                                                    <span class="fa-lang">محاسبه</span>
+                                                                                    <span class="en-lang">Calculate</span>
+                                                                                </button>
+                                                                            </div>
+                                                                            <div class="shape-results">
+                                                                                <div class="result-item">
+                                                                                    <div class="result-label fa-lang">مساحت</div>
+                                                                                    <div class="result-label en-lang">Area</div>
+                                                                                    <div class="result-value" id="rectangleArea">40.00 cm²</div>
+                                                                                    <div class="result-formula">A = w × h</div>
+                                                                                </div>
+                                                                                <div class="result-item">
+                                                                                    <div class="result-label fa-lang">محیط</div>
+                                                                                    <div class="result-label en-lang">Perimeter</div>
+                                                                                    <div class="result-value" id="rectanglePerimeter">26.00 cm</div>
+                                                                                    <div class="result-formula">P = 2(w + h)</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <!-- مثلث -->
+                                                                        <div class="shape-form" id="triangle-form">
+                                                                            <div class="shape-illustration">
+                                                                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                                                                    <polygon points="50,10 10,80 90,80" fill="rgba(0,102,204,0.2)" stroke="#0066cc" stroke-width="2"/>
+                                                                                    <line x1="50" y1="10" x2="50" y2="80" stroke="#0066cc" stroke-width="2" stroke-dasharray="4"/>
+                                                                                    <text x="52" y="45" font-size="10" fill="#0066cc">h</text>
+                                                                                    <text x="30" y="85" font-size="10" fill="#0066cc">a</text>
+                                                                                    <text x="65" y="85" font-size="10" fill="#0066cc">b</text>
+                                                                                    <text x="50" y="25" font-size="10" fill="#0066cc">c</text>
+                                                                                </svg>
+                                                                            </div>
+                                                                            <div class="shape-inputs">
+                                                                                <div class="form-group">
+                                                                                    <label class="fa-lang">ضلع اول (a)</label>
+                                                                                    <label class="en-lang">Side a</label>
+                                                                                    <div class="input-group">
+                                                                                        <input type="number" id="triangleSideA" min="0" step="0.1" value="5">
+                                                                                        <span class="unit">cm</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label class="fa-lang">ضلع دوم (b)</label>
+                                                                                    <label class="en-lang">Side b</label>
+                                                                                    <div class="input-group">
+                                                                                        <input type="number" id="triangleSideB" min="0" step="0.1" value="5">
+                                                                                        <span class="unit">cm</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label class="fa-lang">ضلع سوم (c)</label>
+                                                                                    <label class="en-lang">Side c</label>
+                                                                                    <div class="input-group">
+                                                                                        <input type="number" id="triangleSideC" min="0" step="0.1" value="5">
+                                                                                        <span class="unit">cm</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <button class="calculate-btn" onclick="calculateTriangle()">
+                                                                                    <i class="fas fa-calculator"></i>
+                                                                                    <span class="fa-lang">محاسبه</span>
+                                                                                    <span class="en-lang">Calculate</span>
+                                                                                </button>
+                                                                            </div>
+                                                                            <div class="shape-results">
+                                                                                <div class="result-item">
+                                                                                    <div class="result-label fa-lang">مساحت</div>
+                                                                                    <div class="result-label en-lang">Area</div>
+                                                                                    <div class="result-value" id="triangleArea">10.83 cm²</div>
+                                                                                    <div class="result-formula">A = √(s(s-a)(s-b)(s-c))</div>
+                                                                                </div>
+                                                                                <div class="result-item">
+                                                                                    <div class="result-label fa-lang">محیط</div>
+                                                                                    <div class="result-label en-lang">Perimeter</div>
+                                                                                    <div class="result-value" id="trianglePerimeter">15.00 cm</div>
+                                                                                    <div class="result-formula">P = a + b + c</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <!-- بیضی -->
+                                                                        <div class="shape-form" id="ellipse-form">
+                                                                            <div class="shape-illustration">
+                                                                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                                                                    <ellipse cx="50" cy="50" rx="40" ry="25" fill="rgba(0,102,204,0.2)" stroke="#0066cc" stroke-width="2"/>
+                                                                                    <line x1="10" y1="50" x2="90" y2="50" stroke="#0066cc" stroke-width="2" stroke-dasharray="4"/>
+                                                                                    <text x="45" y="45" font-size="10" fill="#0066cc">2a</text>
+                                                                                    <line x1="50" y1="25" x2="50" y2="75" stroke="#0066cc" stroke-width="2" stroke-dasharray="4"/>
+                                                                                    <text x="55" y="50" font-size="10" fill="#0066cc">2b</text>
+                                                                                </svg>
+                                                                            </div>
+                                                                            <div class="shape-inputs">
+                                                                                <div class="form-group">
+                                                                                    <label class="fa-lang">نیم قطر بزرگ (a)</label>
+                                                                                    <label class="en-lang">Semi-major axis (a)</label>
+                                                                                    <div class="input-group">
+                                                                                        <input type="number" id="ellipseMajor" min="0" step="0.1" value="6">
+                                                                                        <span class="unit">cm</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label class="fa-lang">نیم قطر کوچک (b)</label>
+                                                                                    <label class="en-lang">Semi-minor axis (b)</label>
+                                                                                    <div class="input-group">
+                                                                                        <input type="number" id="ellipseMinor" min="0" step="0.1" value="4">
+                                                                                        <span class="unit">cm</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <button class="calculate-btn" onclick="calculateEllipse()">
+                                                                                    <i class="fas fa-calculator"></i>
+                                                                                    <span class="fa-lang">محاسبه</span>
+                                                                                    <span class="en-lang">Calculate</span>
+                                                                                </button>
+                                                                            </div>
+                                                                            <div class="shape-results">
+                                                                                <div class="result-item">
+                                                                                    <div class="result-label fa-lang">مساحت</div>
+                                                                                    <div class="result-label en-lang">Area</div>
+                                                                                    <div class="result-value" id="ellipseArea">75.40 cm²</div>
+                                                                                    <div class="result-formula">A = πab</div>
+                                                                                </div>
+                                                                                <div class="result-item">
+                                                                                    <div class="result-label fa-lang">محیط (تقریبی)</div>
+                                                                                    <div class="result-label en-lang">Perimeter (approx.)</div>
+                                                                                    <div class="result-value" id="ellipsePerimeter">31.61 cm</div>
+                                                                                    <div class="result-formula">P ≈ 2π√((a²+b²)/2)</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <!-- ذوزنقه -->
+                                                                        <div class="shape-form" id="trapezoid-form">
+                                                                            <div class="shape-illustration">
+                                                                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                                                                    <polygon points="20,30 80,30 90,70 10,70" fill="rgba(0,102,204,0.2)" stroke="#0066cc" stroke-width="2"/>
+                                                                                    <line x1="20" y1="25" x2="80" y2="25" stroke="#0066cc" stroke-width="2" stroke-dasharray="4"/>
+                                                                                    <text x="45" y="23" font-size="10" fill="#0066cc">a</text>
+                                                                                    <line x1="10" y1="75" x2="90" y2="75" stroke="#0066cc" stroke-width="2" stroke-dasharray="4"/>
+                                                                                    <text x="45" y="85" font-size="10" fill="#0066cc">b</text>
+                                                                                    <line x1="50" y1="30" x2="50" y2="70" stroke="#0066cc" stroke-width="2" stroke-dasharray="4"/>
+                                                                                    <text x="53" y="50" font-size="10" fill="#0066cc">h</text>
+                                                                                </svg>
+                                                                            </div>
+                                                                            <div class="shape-inputs">
+                                                                                <div class="form-group">
+                                                                                    <label class="fa-lang">قاعده بالا (a)</label>
+                                                                                    <label class="en-lang">Upper base (a)</label>
+                                                                                    <div class="input-group">
+                                                                                        <input type="number" id="trapezoidUpperBase" min="0" step="0.1" value="6">
+                                                                                        <span class="unit">cm</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label class="fa-lang">قاعده پایین (b)</label>
+                                                                                    <label class="en-lang">Lower base (b)</label>
+                                                                                    <div class="input-group">
+                                                                                        <input type="number" id="trapezoidLowerBase" min="0" step="0.1" value="8">
+                                                                                        <span class="unit">cm</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label class="fa-lang">ارتفاع (h)</label>
+                                                                                    <label class="en-lang">Height (h)</label>
+                                                                                    <div class="input-group">
+                                                                                        <input type="number" id="trapezoidHeight" min="0" step="0.1" value="4">
+                                                                                        <span class="unit">cm</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label class="fa-lang">ضلع چپ (c)</label>
+                                                                                    <label class="en-lang">Left side (c)</label>
+                                                                                    <div class="input-group">
+                                                                                        <input type="number" id="trapezoidLeftSide" min="0" step="0.1" value="4.5">
+                                                                                        <span class="unit">cm</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label class="fa-lang">ضلع راست (d)</label>
+                                                                                    <label class="en-lang">Right side (d)</label>
+                                                                                    <div class="input-group">
+                                                                                        <input type="number" id="trapezoidRightSide" min="0" step="0.1" value="4.5">
+                                                                                        <span class="unit">cm</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <button class="calculate-btn" onclick="calculateTrapezoid()">
+                                                                                    <i class="fas fa-calculator"></i>
+                                                                                    <span class="fa-lang">محاسبه</span>
+                                                                                    <span class="en-lang">Calculate</span>
+                                                                                </button>
+                                                                            </div>
+                                                                            <div class="shape-results">
+                                                                                <div class="result-item">
+                                                                                    <div class="result-label fa-lang">مساحت</div>
+                                                                                    <div class="result-label en-lang">Area</div>
+                                                                                    <div class="result-value" id="trapezoidArea">28.00 cm²</div>
+                                                                                    <div class="result-formula">A = (a+b)h/2</div>
+                                                                                </div>
+                                                                                <div class="result-item">
+                                                                                    <div class="result-label fa-lang">محیط</div>
+                                                                                    <div class="result-label en-lang">Perimeter</div>
+                                                                                    <div class="result-value" id="trapezoidPerimeter">23.00 cm</div>
+                                                                                    <div class="result-formula">P = a + b + c + d</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- بخش حل معادلات -->
+                                                        <div class="calc-tab-content" id="equations-tab">
+                                                            <div class="equations-container">
+                                                                <div class="equations-header">
+                                                                    <h2 class="fa-lang">حل معادلات درجه‌دار</h2>
+                                                                    <h2 class="en-lang">Equation Solver</h2>
+                                                                    <p class="fa-lang">معادلات درجه اول و دوم را حل کنید</p>
+                                                                    <p class="en-lang">Solve linear and quadratic equations</p>
+                                                                </div>
+
+                                                                <div class="equations-body">
+                                                                    <div class="equation-type-selector">
+                                                                        <button class="equation-type-btn active" data-equation="linear">
+                                                                            <span class="fa-lang">معادله درجه اول</span>
+                                                                            <span class="en-lang">Linear Equation</span>
+                                                                            <div class="equation-preview">ax + b = 0</div>
+                                                                        </button>
+                                                                        <button class="equation-type-btn" data-equation="quadratic">
+                                                                            <span class="fa-lang">معادله درجه دوم</span>
+                                                                            <span class="en-lang">Quadratic Equation</span>
+                                                                            <div class="equation-preview">ax² + bx + c = 0</div>
+                                                                        </button>
+                                                                        <button class="equation-type-btn" data-equation="cubic">
+                                                                            <span class="fa-lang">معادله درجه سوم</span>
+                                                                            <span class="en-lang">Cubic Equation</span>
+                                                                            <div class="equation-preview">ax³ + bx² + cx + d = 0</div>
+                                                                        </button>
+                                                                    </div>
+
+                                                                    <div class="equation-solver">
+                                                                        <!-- معادله درجه اول -->
+                                                                        <div class="equation-form active" id="linear-form">
+                                                                            <div class="equation-illustration">
+                                                                                <div class="equation-display">
+                                                                                    <span class="coefficient">a</span><span class="variable">x</span>
+                                                                                    <span class="operator">+</span>
+                                                                                    <span class="coefficient">b</span>
+                                                                                    <span class="operator">=</span>
+                                                                                    <span class="constant">0</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="equation-inputs">
+                                                                                <div class="form-group">
+                                                                                    <label class="fa-lang">ضریب x (a)</label>
+                                                                                    <label class="en-lang">Coefficient of x (a)</label>
+                                                                                    <div class="input-group">
+                                                                                        <input type="number" id="linearA" step="0.1" value="1">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label class="fa-lang">عدد ثابت (b)</label>
+                                                                                    <label class="en-lang">Constant term (b)</label>
+                                                                                    <div class="input-group">
+                                                                                        <input type="number" id="linearB" step="0.1" value="3">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <button class="calculate-btn" onclick="solveLinearEquation()">
+                                                                                    <i class="fas fa-calculator"></i>
+                                                                                    <span class="fa-lang">حل معادله</span>
+                                                                                    <span class="en-lang">Solve Equation</span>
+                                                                                </button>
+                                                                            </div>
+                                                                            <div class="equation-results">
+                                                                                <div class="result-item">
+                                                                                    <div class="result-label fa-lang">جواب معادله</div>
+                                                                                    <div class="result-label en-lang">Solution</div>
+                                                                                    <div class="result-value" id="linearSolution">x = -3</div>
+                                                                                    <div class="result-formula">x = -b/a</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <!-- معادله درجه دوم -->
+                                                                        <div class="equation-form" id="quadratic-form">
+                                                                            <div class="equation-illustration">
+                                                                                <div class="equation-display">
+                                                                                    <span class="coefficient">a</span><span class="variable">x²</span>
+                                                                                    <span class="operator">+</span>
+                                                                                    <span class="coefficient">b</span><span class="variable">x</span>
+                                                                                    <span class="operator">+</span>
+                                                                                    <span class="coefficient">c</span>
+                                                                                    <span class="operator">=</span>
+                                                                                    <span class="constant">0</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="equation-inputs">
+                                                                                <div class="form-group">
+                                                                                    <label class="fa-lang">ضریب x² (a)</label>
+                                                                                    <label class="en-lang">Coefficient of x² (a)</label>
+                                                                                    <div class="input-group">
+                                                                                        <input type="number" id="quadraticA" step="0.1" value="1">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label class="fa-lang">ضریب x (b)</label>
+                                                                                    <label class="en-lang">Coefficient of x (b)</label>
+                                                                                    <div class="input-group">
+                                                                                        <input type="number" id="quadraticB" step="0.1" value="5">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label class="fa-lang">عدد ثابت (c)</label>
+                                                                                    <label class="en-lang">Constant term (c)</label>
+                                                                                    <div class="input-group">
+                                                                                        <input type="number" id="quadraticC" step="0.1" value="6">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <button class="calculate-btn" onclick="solveQuadraticEquation()">
+                                                                                    <i class="fas fa-calculator"></i>
+                                                                                    <span class="fa-lang">حل معادله</span>
+                                                                                    <span class="en-lang">Solve Equation</span>
+                                                                                </button>
+                                                                            </div>
+                                                                            <div class="equation-results">
+                                                                                <div class="result-item">
+                                                                                    <div class="result-label fa-lang">دلتا (Δ)</div>
+                                                                                    <div class="result-label en-lang">Discriminant (Δ)</div>
+                                                                                    <div class="result-value" id="quadraticDiscriminant">1</div>
+                                                                                    <div class="result-formula">Δ = b² - 4ac</div>
+                                                                                </div>
+                                                                                <div class="result-item">
+                                                                                    <div class="result-label fa-lang">جواب اول</div>
+                                                                                    <div class="result-label en-lang">First Solution</div>
+                                                                                    <div class="result-value" id="quadraticSolution1">x₁ = -2</div>
+                                                                                </div>
+                                                                                <div class="result-item">
+                                                                                    <div class="result-label fa-lang">جواب دوم</div>
+                                                                                    <div class="result-label en-lang">Second Solution</div>
+                                                                                    <div class="result-value" id="quadraticSolution2">x₂ = -3</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <!-- معادله درجه سوم -->
+                                                                        <div class="equation-form" id="cubic-form">
+                                                                            <div class="equation-illustration">
+                                                                                <div class="equation-display">
+                                                                                    <span class="coefficient">a</span><span class="variable">x³</span>
+                                                                                    <span class="operator">+</span>
+                                                                                    <span class="coefficient">b</span><span class="variable">x²</span>
+                                                                                    <span class="operator">+</span>
+                                                                                    <span class="coefficient">c</span><span class="variable">x</span>
+                                                                                    <span class="operator">+</span>
+                                                                                    <span class="coefficient">d</span>
+                                                                                    <span class="operator">=</span>
+                                                                                    <span class="constant">0</span>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="equation-inputs">
+                                                                                <div class="form-group">
+                                                                                    <label class="fa-lang">ضریب x³ (a)</label>
+                                                                                    <label class="en-lang">Coefficient of x³ (a)</label>
+                                                                                    <div class="input-group">
+                                                                                        <input type="number" id="cubicA" step="0.1" value="1">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label class="fa-lang">ضریب x² (b)</label>
+                                                                                    <label class="en-lang">Coefficient of x² (b)</label>
+                                                                                    <div class="input-group">
+                                                                                        <input type="number" id="cubicB" step="0.1" value="-6">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label class="fa-lang">ضریب x (c)</label>
+                                                                                    <label class="en-lang">Coefficient of x (c)</label>
+                                                                                    <div class="input-group">
+                                                                                        <input type="number" id="cubicC" step="0.1" value="11">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <label class="fa-lang">عدد ثابت (d)</label>
+                                                                                    <label class="en-lang">Constant term (d)</label>
+                                                                                    <div class="input-group">
+                                                                                        <input type="number" id="cubicD" step="0.1" value="-6">
+                                                                                        <span class="unit"></span>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <button class="calculate-btn" onclick="solveCubicEquation()">
+                                                                                    <i class="fas fa-calculator"></i>
+                                                                                    <span class="fa-lang">حل معادله</span>
+                                                                                    <span class="en-lang">Solve Equation</span>
+                                                                                </button>
+                                                                            </div>
+                                                                            <div class="equation-results">
+                                                                                <div class="result-item wide">
+                                                                                    <div class="result-label fa-lang">جواب‌های معادله</div>
+                                                                                    <div class="result-label en-lang">Solutions</div>
+                                                                                    <div class="result-value" id="cubicSolution">
+                                                                                        x₁ = 1, x₂ = 2, x₃ = 3
+                                                                                    </div>
+                                                                                    <div class="result-note fa-lang">
+                                                                                        معادلات درجه سوم ممکن است یک تا سه جواب حقیقی داشته باشند.
+                                                                                    </div>
+                                                                                    <div class="result-note en-lang">
+                                                                                        Cubic equations can have one to three real solutions.
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                             <!-- صفحه رسم نمودار -->
+<div class="graph-page" id="graphPage">
+<div class="graph-header">
+    <div class="graph-title fa-lang">رسم نمودار پیشرفته</div>
+    <div class="graph-title en-lang">Advanced Graph Drawing</div>
+    <button class="back-button" onclick="closeGraphPage()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        <span class="fa-lang">بازگشت</span>
+        <span class="en-lang">Back</span>
+    </button>
+</div>
+
+<div class="graph-content">
+    <!-- کارت تابع ریاضی -->
+    <div class="card function-card">
+        <div class="card-header">
+            <h2 class="fa-lang">تابع ریاضی</h2>
+            <h2 class="en-lang">Mathematical Function</h2>
+            <div class="function-tabs">
+                <button class="tab-btn active" data-tab="standard">
+                    <span class="fa-lang">استاندارد</span>
+                    <span class="en-lang">Standard</span>
+                </button>
+                <button class="tab-btn" data-tab="parametric">
+                    <span class="fa-lang">پارامتری</span>
+                    <span class="en-lang">Parametric</span>
+                </button>
+                <button class="tab-btn" data-tab="polar">
+                    <span class="fa-lang">قطبی</span>
+                    <span class="en-lang">Polar</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="card-body">
+            <div class="tab-content active" id="standard-tab">
+                <div class="function-row">
+                    <div class="function-label">f(x) =</div>
+                    <div class="function-input-wrapper">
+                        <input type="text" id="function-input" class="function-input" value="sin(x)" placeholder="مثال: x^2 + 3*x - 2">
+                        <div class="function-color-picker">
+                            <input type="color" id="function-color" value="#0066cc">
+                        </div>
+                    </div>
+                    <button class="draw-btn" id="draw-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                        <span class="fa-lang">رسم</span>
+                        <span class="en-lang">Draw</span>
+                    </button>
+                </div>
+
+                <div class="function-list" id="function-list">
+                    <!-- توابع رسم شده اینجا نمایش داده می‌شوند -->
+                </div>
+
+                <div class="function-actions">
+                    <button class="action-btn" id="add-function-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                        <span class="fa-lang">تابع جدید</span>
+                        <span class="en-lang">New Function</span>
+                    </button>
+                    <button class="action-btn" id="clear-all-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="3 6 5 6 21 6"></polyline>
+                            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                        </svg>
+                        <span class="fa-lang">حذف همه</span>
+                        <span class="en-lang">Clear All</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="tab-content" id="parametric-tab">
+                <div class="parametric-inputs">
+                    <div class="function-row">
+                        <div class="function-label">x(t) =</div>
+                        <input type="text" id="parametric-x" class="function-input" value="cos(t)" placeholder="مثال: cos(t)">
+                    </div>
+                    <div class="function-row">
+                        <div class="function-label">y(t) =</div>
+                        <input type="text" id="parametric-y" class="function-input" value="sin(t)" placeholder="مثال: sin(t)">
+                    </div>
+                    <div class="function-row range-row">
+                        <div class="function-label">
+                            <span class="fa-lang">بازه t:</span>
+                            <span class="en-lang">t range:</span>
+                        </div>
+                        <div class="range-inputs">
+                            <input type="number" id="t-min" value="0" step="0.1">
+                            <span class="fa-lang">تا</span>
+                            <span class="en-lang">to</span>
+                            <input type="number" id="t-max" value="6.28" step="0.1">
+                        </div>
+                    </div>
+                    <div class="function-row">
+                        <div class="function-color-picker">
+                            <input type="color" id="parametric-color" value="#e91e63">
+                        </div>
+                        <button class="draw-btn" id="draw-parametric-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                            <span class="fa-lang">رسم</span>
+                            <span class="en-lang">Draw</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="polar-tab">
+                <div class="function-row">
+                    <div class="function-label">r(θ) =</div>
+                    <div class="function-input-wrapper">
+                        <input type="text" id="polar-input" class="function-input" value="2*cos(3*theta)" placeholder="مثال: 2*cos(3*theta)">
+                        <div class="function-color-picker">
+                            <input type="color" id="polar-color" value="#4caf50">
+                        </div>
+                    </div>
+                    <button class="draw-btn" id="draw-polar-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                        <span class="fa-lang">رسم</span>
+                        <span class="en-lang">Draw</span>
+                    </button>
+                </div>
+                <div class="function-row range-row">
+                    <div class="function-label">
+                        <span class="fa-lang">بازه θ:</span>
+                        <span class="en-lang">θ range:</span>
+                    </div>
+                    <div class="range-inputs">
+                        <input type="number" id="theta-min" value="0" step="0.1">
+                        <span class="fa-lang">تا</span>
+                        <span class="en-lang">to</span>
+                        <input type="number" id="theta-max" value="6.28" step="0.1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- کارت نمودار -->
+    <div class="card graph-card">
+        <div class="card-header graph-tools">
+            <div class="tool-group">
+                <button class="tool-btn active" id="pan-btn" title="جابجایی">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 8V6a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                    </svg>
+                </button>
+                <button class="tool-btn" id="zoom-in-btn" title="بزرگنمایی">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        <line x1="11" y1="8" x2="11" y2="14"></line>
+                        <line x1="8" y1="11" x2="14" y2="11"></line>
+                    </svg>
+                </button>
+                <button class="tool-btn" id="zoom-out-btn" title="کوچک‌نمایی">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        <line x1="8" y1="11" x2="14" y2="11"></line>
+                    </svg>
+                </button>
+                <button class="tool-btn" id="reset-btn" title="بازنشانی نما">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 2v6h6"></path>
+                        <path d="M3 13a9 9 0 1 0 3-7.7L3 8"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="tool-group">
+                <button class="tool-btn" id="grid-btn" title="نمایش/عدم نمایش شبکه">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="3" y1="9" x2="21" y2="9"></line>
+                        <line x1="3" y1="15" x2="21" y2="15"></line>
+                        <line x1="9" y1="3" x2="9" y2="21"></line>
+                        <line x1="15" y1="3" x2="15" y2="21"></line>
+                    </svg>
+                </button>
+                <button class="tool-btn" id="axes-btn" title="نمایش/عدم نمایش محورها">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="3" x2="12" y2="21"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                    </svg>
+                </button>
+                <button class="tool-btn" id="labels-btn" title="نمایش/عدم نمایش برچسب‌ها">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 15L3 9 9 3"></path>
+                        <path d="M15 3l6 6-6 6"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="tool-group">
+                <button class="tool-btn" id="save-btn" title="ذخیره تصویر">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                        <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                        <polyline points="7 3 7 8 15 8"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="graph-container">
+            <div class="loading-overlay" id="loading-overlay">
+                <div class="spinner"></div>
+                <p class="fa-lang">در حال رسم نمودار...</p>
+                <p class="en-lang">Drawing graph...</p>
+            </div>
+            <canvas id="graph-canvas"></canvas>
+            <div class="graph-info">
+                <div class="coordinates" id="coordinates">x: 0.00, y: 0.00</div>
+                <div class="scale-info" id="scale-info">
+                    <span class="fa-lang">مقیاس: 1:1</span>
+                    <span class="en-lang">Scale: 1:1</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- کارت تنظیمات -->
+    <div class="card settings-card">
+        <div class="card-header">
+            <h2 class="fa-lang">تنظیمات نمودار</h2>
+            <h2 class="en-lang">Graph Settings</h2>
+            <button class="collapse-btn" id="settings-collapse-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+            </button>
+        </div>
+        <div class="card-body settings-body">
+            <div class="settings-group">
+                <h3 class="fa-lang">محدوده محورها</h3>
+                <h3 class="en-lang">Axis Range</h3>
+                <div class="settings-row">
+                    <label class="fa-lang">محور X:</label>
+                    <label class="en-lang">X Axis:</label>
+                    <div class="range-inputs">
+                        <input type="number" id="x-min" value="-10" step="1">
+                        <span class="fa-lang">تا</span>
+                        <span class="en-lang">to</span>
+                        <input type="number" id="x-max" value="10" step="1">
+                    </div>
+                </div>
+                <div class="settings-row">
+                    <label class="fa-lang">محور Y:</label>
+                    <label class="en-lang">Y Axis:</label>
+                    <div class="range-inputs">
+                        <input type="number" id="y-min" value="-10" step="1">
+                        <span class="fa-lang">تا</span>
+                        <span class="en-lang">to</span>
+                        <input type="number" id="y-max" value="10" step="1">
+                    </div>
+                </div>
+                <button class="apply-btn" id="apply-range-btn">
+                    <span class="fa-lang">اعمال محدوده</span>
+                    <span class="en-lang">Apply Range</span>
+                </button>
+            </div>
+
+            <div class="settings-group">
+                <h3 class="fa-lang">سبک نمایش</h3>
+                <h3 class="en-lang">Display Style</h3>
+                <div class="settings-row">
+                    <label class="fa-lang">ضخامت خط:</label>
+                    <label class="en-lang">Line Width:</label>
+                    <input type="range" id="line-width" min="1" max="5" value="2" class="slider">
+                    <span id="line-width-value">2</span>
+                </div>
+                <div class="settings-row">
+                    <label class="fa-lang">کیفیت رسم:</label>
+                    <label class="en-lang">Render Quality:</label>
+                    <select id="quality-select" class="quality-select">
+                        <option value="low" class="fa-lang">پایین (سریع)</option>
+                        <option value="low" class="en-lang">Low (Fast)</option>
+                        <option value="medium" selected class="fa-lang">متوسط</option>
+                        <option value="medium" class="en-lang">Medium</option>
+                        <option value="high" class="fa-lang">بالا (کند)</option>
+                        <option value="high" class="en-lang">High (Slow)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="settings-group">
+                <h3 class="fa-lang">پیش‌نمایش‌های آماده</h3>
+                <h3 class="en-lang">Ready Presets</h3>
+                <div class="preset-buttons">
+                    <button class="preset-btn" data-preset="parabola">
+                        <span class="fa-lang">سهمی</span>
+                        <span class="en-lang">Parabola</span>
+                    </button>
+                    <button class="preset-btn" data-preset="sine">
+                        <span class="fa-lang">سینوسی</span>
+                        <span class="en-lang">Sine</span>
+                    </button>
+                    <button class="preset-btn" data-preset="circle">
+                        <span class="fa-lang">دایره</span>
+                        <span class="en-lang">Circle</span>
+                    </button>
+                    <button class="preset-btn" data-preset="flower">
+                        <span class="fa-lang">گل</span>
+                        <span class="en-lang">Flower</span>
+                    </button>
+                    <button class="preset-btn" data-preset="heart">
+                        <span class="fa-lang">قلب</span>
+                        <span class="en-lang">Heart</span>
+                    </button>
+                    <button class="preset-btn" data-preset="butterfly">
+                        <span class="fa-lang">پروانه</span>
+                        <span class="en-lang">Butterfly</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-container" id="toast-container">
+        <!-- اعلان‌ها اینجا نمایش داده می‌شوند -->
+    </div>
+</div>
+</div>
+
+<!-- انیمیشن تغییر تم -->
+<div class="theme-switch-animation" id="themeAnimation">
+<div class="theme-ball" id="themeBall"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
